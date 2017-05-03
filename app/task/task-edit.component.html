@@ -1,0 +1,16 @@
+<div class="container">
+    <div class="row">
+        <h1>Editar tarefa</h1>
+        <form name="form">
+            <div>
+                <label>ID:</label>
+                <span>{{task.id}}</span>
+            </div>
+            <div class="form-group">
+                <label for="nome"></label>
+                <input id="nome" name="nome" type="text" class="form-control" placeholder="Digite o nome" [(ngModel)]="task.name"/>
+            </div>
+            <button type="button" class="btn btn-default" (click)="submit()">Enviar</button>
+        </form>
+    </div>
+</div>
